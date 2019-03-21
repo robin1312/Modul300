@@ -7,7 +7,7 @@
   - Visual Studio Code
   - Git-Client
   - SSH Key
-- Git Hub
+- GitHub
 - Wissensstand
 - Lernschritte
 - Vagrant Befehle
@@ -18,3 +18,21 @@
 - Testing
 - Wissenszuwachs
 - Reflexion
+## Auftrag
+## Umgebung einrichten
+### VirtualBox
+### Vagrant
+### Visual Studio Code
+### GIT-Client
+### SSH Key
+## GitHub
+## Wissensstand
+## Lernschritte
+## Vagrant Befehle
+## Sicherheitsaspekte und Netzwerkplan
+### Firewall
+### Sicherheitsmassnahmen
+### Benutzer und Rechte
+## Testing
+## Wissenszuwachs
+## Reflexion
