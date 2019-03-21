@@ -5,8 +5,8 @@
   - VirtualBox
   - Vagrant
   - Visual Studio Code
-  -Git-Client
-  -SSH Key
+  - Git-Client
+  - SSH Key
 - Git Hub
 - Wissensstand
 - Lernschritte
