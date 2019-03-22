@@ -199,7 +199,6 @@ Folgende Arbeiten müssen gemacht werden:
 
 ## SSH-Key für Client erstellt
 
-![ssh key](https://user-images.githubusercontent.com/47855918/54729693-3ac17000-4b85-11e9-95b6-e2673ee3df48.png)
 SSH-Key wurde erstellt mit dem git-bash. Zusätzlich wurde auch ein Passwort hinterlegt. 
 Ausserdem wurde es dem SSH-Agent hinzugefügt
 
@@ -244,7 +243,6 @@ Der SSH-Key wurde in Github implementiert.
 
 ### Repository klonen
 ***
-![rep klonen](https://user-images.githubusercontent.com/47855918/54730216-f4b9db80-4b87-11e9-95c5-fa678e3d3a67.png)
 Die Repository wird von Github auf den Client geklont.
 
 ### Repository hochladen (Push)
