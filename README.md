@@ -336,7 +336,8 @@ K3
 
 ## Bestehende vm aus Vagrant-Cloud einrichten
 
-```# -*- mode: ruby -*-
+```SHELL
+# -*- mode: ruby -*-
 # vi: set ft=ruby :
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
@@ -432,7 +433,7 @@ Um die Funktionsweise vom DHCP-Server zu testen muss man eine vm erstellen mit d
 ## Andere, vorgefertige VM auf eigenem Notebook aufgesetzt
 So habe ich mein Vagrant konfiguriert:
 
-```
+```SHELL
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
