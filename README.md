@@ -1,13 +1,6 @@
 M300 - LB1
 ======
 
-## Voraussetzungen
-* VirtualBox 
-* Vagrant
-* Text-Editor (z.B. Visual Studio Code)
-* Github Account
-
-
 ## Inhaltsverzeichnis
 * K1
   * VirtualBox
@@ -309,7 +302,7 @@ Mein Git-Client ist aktiv und mein repo wurde auch geklont.
 
 ## Dokumentation ist als Markdown vorhanden, Editor ausgewählt und eingerichtet, strukturiert
 
-Die ganze Dokumentation habe ich im Github Code Browser geschrieben.
+Die ganze Dokumentation habe ich im GitHub Code Browser geschrieben.
 
 
 
@@ -317,27 +310,27 @@ Die ganze Dokumentation habe ich im Github Code Browser geschrieben.
 
 - Linux: 
 
-  Ich habe im Geschäft schon mit Linux zu tun gehabt. Daher hatte ich vor dem Projekt grundlegendes Basiswissen über Linux
+  Ich habe im Geschäft schon mit Linux gearbeitet und in anderen Modulen. Daher hatte ich vor dem Projekt grundlegendes Basiswissen über Linux
 
 - Virtualisierung: 
 
-  In ÜKs und im Geschäft hatte ich sehr viel zu tun mit Virtualisierung, deswegen kenne ich mich mit VMs einigermassen gut aus.
+  In ÜKs und im Geschäft hatte ich sehr viel zu tun mit Virtualisierung, deswegen kenne ich mich mit VMs gut aus.
 
 - Vagrant: 
 
-  Vagrant kannte ich vorher nicht. Ich arbeite zum ersten Mal mit Vagrant. 
+  Ich Arbeite zum ersten Mal mit Vagrant. 
 
 - Versionsverwaltung:
 
-  Die Versionsverwaltung habe ich bis jetzt eigentlich garnicht verwendet. 
+  Die Versionsverwaltung habe ich bis jetzt eigentlich nie verwendet. 
   
 - Git & Markdown 
 
-  Mit Git und Markdown hatte ich bis jetzt nichts am Hut, das ist alles neu für mich.
+  Mit Git und Markdown hatte ich bis jetzt nichts zu tun und ist daher Neuland für mich.
 
 - Systemsicherheit
 
-  Mit Systemsicherheit hatte ich in der Vergangenheit ab und zu zu tun. Kenne mich mässig aus.
+  Mit Systemsicherheit hatte ich in der Vergangenheit zu tun z.B. in Modulen.
   
 
 K3
@@ -440,7 +433,7 @@ Um die Database zu testen, gibt man im Browser die folgende URL ein: http://loca
 
 Um die Funktionsweise vom DHCP-Server zu testen muss man eine vm erstellen mit der gleichen Netzwerkkarte wie der DHCP-Server und dann die Einstellungen ändern unter DHCP. Danach erhählt diese VM eine IP vom erstellten DHCP-Server. 
 
-## Andere, vorgefertige vm auf eigenem Notebook aufgesetzt
+## Andere, vorgefertige VM auf eigenem Notebook aufgesetzt
 So habe ich mein Vagrant konfiguriert:
 
 ```
@@ -628,11 +621,7 @@ Im folgenden Schritt wird der Reverse-Proxy eingerichtet:
     	cd 	/etc/apache2/sites-enabled
     	wget https://pastebin.com/raw/GbjFC2ii
     	cp GbjFC2ii 001-reverseproxy.conf
-    
-
-   
-
-
+	
 ## Benutzer- und Rechtevergabe ist eingerichtet
 Im nächsten Schritt wird eine Gruppe, inklusive Benutzer mit Passwort erstellt. Dies geht wie folgt:
 
@@ -826,9 +815,7 @@ sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
 
 
 ## Vergleich Vorwissen - Wissenszuwachs
-Ich habe gelernt wie man mit einem Vagrant File eine VM erstellt nach seinen Bedürfnissen. Ausserdem habe ich mir sehr viel Fachwissen bezüglich Git, Markdown , Linux und Virtualisierung angeignet. Am Anfang hatte ich nur Basis Wissen in den meisten Bereichen. Durch dieses Modul konnte ich mein Wissen sehr vertiefen. 
+Ich habe gelernt wie man mit einem VagrantFile eine VM erstellt nach seinen Bedürfnissen. Ausserdem habe ich mir sehr viel Fachwissen bezüglich Git, Markdown , Linux und Virtualisierung angeeignet. Zuerst war es für mich sehr schwierig aber mit der Zeit ging es dann.
 
 ## Reflexion
-Ich hatte noch nie etwas von Vagrant gehört. Deswegen hatte ich am Anfang noch bisschen Mühe. Jedoch als es Herr Kälin uns erklärte, fand ich grosses Interesse. Eine VM zu erstellen mit einem Text-File nach seinen Bedürfnissen? Das ist sehr praktisch und zeitsparend. Was mir besonders gefiel war das Erarbeiten der Dokumentation, da ich bis anhin den Funktionsumfang von GitHub in Kombination mit Markdown nicht kannte. Da für mich alles sehr neu war, musste ich mich in einer ersten Phase erst einmal in die einzelnen Bereiche einarbeiten und Schritt für Schritt die Anweisungen befolgen. Grösstenteils hatte ich dabei keine Mühe und ich konnte bereits in geraumer Zeit einen Grossteil der Aufgaben abschliessen. Am Schluss hatte ich ein bisschen Zeitdruck konnte jedoch alles noch gut erledigen. 
-
-Ich konnte vieles lernen und bedanke mich beim Herrn Kälin für seine Unterstützung. In Zukunft werde ich Github auf jeden Fall für nachfolgende Projekte brauchen. 
+Ich hatte noch nie etwas von Vagrant gehört. Deswegen hatte ich am Anfang noch viel Mühe. Eine VM zu erstellen mit einem Text-File nach seinen Bedürfnissen? Das ist sehr praktisch und zeitsparend. Was mir besonders gefiel war das Erarbeiten der Dokumentation, da ich bis anhin den Funktionsumfang von GitHub in Kombination mit Markdown nicht kannte. Da für mich alles sehr neu war, musste ich mich in einer ersten Phase erst einmal in die einzelnen Bereiche einarbeiten und Schritt für Schritt die Anweisungen befolgen. Grösstenteils hatte ich dabei keine Mühe und ich konnte bereits in geraumer Zeit einen Grossteil der Aufgaben abschliessen. Leider ging mein 1. Vagrantfile nicht richtig und ich habe mich entschieden ein anderes zu erstellen mit einem anderem Service.
