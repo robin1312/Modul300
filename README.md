@@ -328,7 +328,7 @@ Die ganze Dokumentation habe ich im GitHub Code Browser geschrieben.
 
 - Systemsicherheit
 
-  Mit Systemsicherheit hatte ich in der Vergangenheit zu tun z.B. in Modulen.
+  Mit Systemsicherheit hatte ich in der Vergangenheit zu tun z.B. in Modulen. Darum werde ich eine Firewall installieren und einen 	  reverse Proxy, dazu werde ich noch später kommen. Da ich mein Netzwerk über den lokalen Laptop läuft ist es zuesätzlich sicher, da ich ein Antiviren Programm und eine Firewall habe.
   
 
 K3
