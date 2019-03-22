@@ -1,16 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  # All Vagrant configuration is done here. The most common configuration
-  # options are documented and commented below. For a complete reference,
-  # please see the online documentation at vagrantup.com.
-
-<<<<<<< HEAD
-  # Every Vagrant virtual environment requires a box to build off of.Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "private_network", ip:"169.254.57.183"
   config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
@@ -37,8 +30,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     cp GbjFC2ii 001-reverseproxy.conf
   SHELL
 end
-
-# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 
 #Virtualbox für DHCP
 #Im ersten Abschnitt wird das Guest-OS der VM bestimmt.
@@ -150,8 +141,6 @@ SHELL
       sudo ufw --force enable
 SHELL
     end  
-=======
-  # Every Vagrant virtual environment requires a box to build off of.
   config.vm.define "database" do |db|
     db.vm.box = "ubuntu/xenial64"
 	db.vm.provider "virtualbox" do |vb|
