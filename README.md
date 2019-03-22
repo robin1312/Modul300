@@ -812,7 +812,7 @@ sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
 
 
 ## Vergleich Vorwissen - Wissenszuwachs
-Ich habe gelernt wie man mit einem VagrantFile eine VM erstellt nach seinen Bedürfnissen. Ausserdem habe ich mir sehr viel Fachwissen bezüglich Git, Markdown , Linux und Virtualisierung angeeignet. Zuerst war es für mich sehr schwierig aber mit der Zeit ging es dann.
+Ich habe gelernt wie man mit einem VagrantFile eine VM erstellt nach seinen Bedürfnissen. Ausserdem habe ich mir sehr viel Fachwissen bezüglich Git, Markdown , Linux und Virtualisierung angeeignet. Zuerst war es für mich sehr schwierig aber mit der Zeit ging es dann. Vor dem Modul wusste ich eigentlich nichts, da ich aber nebenbei noch den Virtualisierungs ÜK hatte half mir das sehr. Ich verstehe nun schon sehr viel von der Virtualisierung und weiss wie man z.B. ein Container erstellt oder ein gesamtes Netzwerk virtualisiert.
 
 ## Reflexion
 Ich hatte noch nie etwas von Vagrant gehört. Deswegen hatte ich am Anfang noch viel Mühe. Eine VM zu erstellen mit einem Text-File nach seinen Bedürfnissen? Das ist sehr praktisch und zeitsparend. Was mir besonders gefiel war das Erarbeiten der Dokumentation, da ich bis anhin den Funktionsumfang von GitHub in Kombination mit Markdown nicht kannte. Da für mich alles sehr neu war, musste ich mich in einer ersten Phase erst einmal in die einzelnen Bereiche einarbeiten und Schritt für Schritt die Anweisungen befolgen. Grösstenteils hatte ich dabei keine Mühe und ich konnte bereits in geraumer Zeit einen Grossteil der Aufgaben abschliessen. Leider ging mein 1. Vagrantfile nicht richtig und ich habe mich entschieden ein anderes zu erstellen mit einem anderem Service.
