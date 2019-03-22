@@ -397,31 +397,29 @@ Die wichtigsten Befehle:
 ## Eingerichtete Umgebung
 
 ```
-+---------------------------------------------------------------+
-! Notebook - Schulnetz 10.x.x.x und Privates Netz 192.168.6.1   !                 
-!                                  !	
-!                                                               !	
-!    +--------------------+          +---------------------+    !
-!    ! Apache Server      !          ! DHCP Server         !    !       
-!    ! Host: apache       !          ! Host: dhcp          !    !
-!    ! IP: 192.168.6.7    ! 	     ! IP: 192.168.6.5     !    !
-!    ! Port: 80           !          ! Port: -             !    !
-!    ! Nat: 8080          !          !                     !    !
-!    +--------------------+          +---------------------+    !
-!                                                               !
-!                                                               !
-!                                                               !
-!                  +---------------------+                      !
-!                  ! FTP Server          !                      !
-!                  ! Host: ftp           !                      !
-!                  ! IP: 192.168.6.6     !                      !
-!                  ! Port 3306           !                      !
-!                  !             	 !                      !
-!                  +---------------------+                      !                                                           
-!                                                               !
-!	                                                        !
-+---------------------------------------------------------------
-```
+________________________________________________________________
+|Notebook - Schulnetz 10.71.13.19 und Privates Netz 192.168.6.19|                 
+|                                                               |	
+|    ______________________          _______________________    |
+|    | Apache Server      |          |DHCP Server          |    |       
+|    | Host: apache       |          | Host: dhcp          |    |
+|    | IP: 192.168.6.7    | 	     | IP: 192.168.6.5     |    |
+|    | Port: 80           |          | Port: -             |    |
+|    | Nat: 8080          |          |                     |    |
+|    |____________________|          |_____________________|    |
+|                                                               |
+|                                                               |
+|                                                               |
+|                  _______________________                      |
+|                  | FTP Server          |                      |
+|                  | Host: ftp           |                      |
+|                  | IP: 192.168.6.6     |                      |
+|                  | Port 3306           |                      |
+|                  |             	 |                      |
+|                  |_____________________|                      |                                                           
+|                                                               |
+|	                                                        |
+|_______________________________________________________________|
 
 ## Funktionsweise Testen
 
@@ -542,10 +540,10 @@ SHELL
         #FTP Server konfigurieren
         sudo groupadd ftpgroup
         sudo useradd -g ftpgroup -d /dev/null -s /etc ftpuser
-        sudo pure-pw useradd david -u ftpuser -g ftpgroup -d /home/pubftp/david -N 10
+        sudo pure-pw useradd robin -u ftpuser -g ftpgroup -d /home/pubftp/robin -N 10
         #FTP Server neustarten
 	#sudo service pure-ftpd-common pure-ftpd restart
-        sudo /home/pubftp/david restart
+        sudo /home/pubftp/robin restart
         #Tastaturlayout anpassen
         sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
         #Local Firewall installieren
@@ -748,13 +746,13 @@ Nach der Installation kann ich die FTP-Server konfigurieren. Bei meinem Fall sie
 ```
 sudo groupadd ftpgroup
 sudo useradd -g ftpgroup -d /dev/null -s /etc ftpuser
-sudo pure-pw useradd david -u ftpuser -g ftpgroup -d /home/pubftp/david -N 10
+sudo pure-pw useradd robin -u ftpuser -g ftpgroup -d /home/pubftp/robin-N 10
 ```
 Nach der Änderung wird der FTP Service neu gestartet.
 ```
 #FTP Server neustarten
 sudo service pure-ftpd-common pure-ftpd restart
-#sudo /home/pubftp/david restart
+#sudo /home/pubftp/robin restart
 ```
 Die Tastaturlayout muss man noch auf Deutsch Schweiz anpassen.
 ```
