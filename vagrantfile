@@ -5,7 +5,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network "private_network", ip:"169.254.57.183"
+  config.vm.network "private_network", ip:"192.168.6.1"
   config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
   config.vm.synced_folder ".", "/var/www/html"
  config.vm.provider "virtualbox" do |vb|
@@ -75,8 +75,8 @@ Vagrant.configure(2) do |config|
         sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
         #Local Firewall installieren
         sudo apt-get -y install ufw gufw 
-        sudo ufw allow from 10.0.2.2 to any port 22
         sudo ufw --force enable
+        sudo ufw allow 22
 SHELL
  end
 
@@ -97,15 +97,14 @@ SHELL
         #FTP Server konfigurieren
         sudo groupadd ftpgroup
         sudo useradd -g ftpgroup -d /dev/null -s /etc ftpuser
-        sudo pure-pw useradd david -u ftpuser -g ftpgroup -d /home/pubftp/david -N 10
+        sudo pure-pw useradd robin -u ftpuser -g ftpgroup -d /home/pubftp/robin -N 10
         #FTP Server neustarten
 	#sudo service pure-ftpd-common pure-ftpd restart
-        sudo /home/pubftp/david restart
+        sudo /home/pubftp/robin restart
         #Tastaturlayout anpassen
         sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
         #Local Firewall installieren
         sudo apt-get -y install ufw gufw 
-        sudo ufw allow from 10.0.2.2 to any port 22
         sudo ufw --force enable
 SHELL
  end        
@@ -149,8 +148,8 @@ SHELL
     db.vm.hostname = "db01"
     db.vm.network "private_network", ip: "192.168.55.100"
     # MySQL Port nur im Private Network sichtbar
-	# db.vm.network "forwarded_port", guest:3306, host:3306, auto_correct: false
-  	db.vm.provision "shell", path: "db.sh"
+	  db.vm.network "forwarded_port", guest:3306, host:3306, auto_correct: false
+  	#db.vm.provision "shell", path: "db.sh"
   end
   
   config.vm.define "web" do |web|
@@ -162,7 +161,7 @@ SHELL
 	  vb.memory = "512"  
 	end     
   	web.vm.synced_folder ".", "/var/www/html"  
-	web.vm.provision "shell", inline: <<-SHELL
+	  web.vm.provision "shell", inline: <<-SHELL
 		sudo apt-get update
 		sudo apt-get -y install debconf-utils apache2 nmap
 		sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password admin'
