@@ -12,16 +12,16 @@ Mein Service wird ein Apache mit phpMyadmin und MySQL zu realisieren. Da ich noc
 
 ## Technische Angaben
 Für den Service braucht man eine Linux Desktop Umgebung, bei welcher man DOcker installieren muss. So installiert man Docker:
-***
+```Shell
 sudo apt-get install docker.io
-***
+```
 Um den ersten Container zu starten geht man in den Ordner webserver, dort befindet sich das Dockerfile. In diesem Ordner gibt man folgende Befehle ein:
-***
+```Shell
 docker build -t webserver .
 docker run --rm -d -p 8080:80 webserver
-***
+```
 Das erste Dockerfile:
-***
+```Shell
 #	Apache Umgebung 
 FROM ubuntu:14.04
 MAINTAINER Robin Winzenried
@@ -54,14 +54,14 @@ EXPOSE 80
 VOLUME /var/www/html
 
 CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"
-***
+```
 Für den zweiten Container geht man in den Ordner mysql rein, dort gibt man dann folgende Befehle ein:
-***
+```Shell
 docker build -t mysql .
 docker run --rm -d -p 3306:3306 mysql
-***
+```
 Das Dockerfile:
-***
+```Shell
 #MySQL Umgebung
 FROM ubuntu:14.04
 
@@ -86,7 +86,7 @@ EXPOSE 3306
 VOLUME /var/lib/mysql
 
 CMD ["mysqld"]
-***
+```
 
 ## Testing
 | Testfall                                                                                               | Resultat                                                                                                                                |
