@@ -5,7 +5,6 @@
  - [Technische Angaben](#Technische-Angaben)
  - [Testing](#testing)
 
-
 ## Service
 Mein Service wird ein Apache mit phpMyadmin und MySQL zu realisieren. Da ich noch nie mit Docker gearbeitet habe hoffe ich das ich gut durch komme und eine gute LB2 abgebe.
 
@@ -86,6 +85,7 @@ VOLUME /var/lib/mysql
 
 CMD ["mysqld"]
 ~~~~
+
 ## Testing
 | Testfall                                                                                               | Resultat                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
