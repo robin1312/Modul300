@@ -5,8 +5,8 @@ MAINTAINER Robin Winzenried
 
 
 #Befehle für mysql-server
-RUN echo 'mysql-server mysql-server/root_spassword password asdf123' | debconf-set-selections 
-RUN echo 'mysql-server mysql-server/root_password_again password asdf123' | debconf-set-selections 
+RUN echo 'mysql-server mysql-server/root_spassword password robin123' | debconf-set-selections 
+RUN echo 'mysql-server mysql-server/root_password_again password robin123' | debconf-set-selections 
 
 # Installation mysql
 RUN apt-get update
