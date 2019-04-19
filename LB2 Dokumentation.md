@@ -1,4 +1,4 @@
-M300 - LB1
+M300 - LB2
 ======
 
 ## Inhaltsverzeichnis
